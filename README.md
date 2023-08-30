@@ -19,3 +19,7 @@ a small and basic sunvox player to embed in your website. it plays back a random
 * make it stop LFO-driven projects
 * make it less ugly
 * make it more responsive (probably also less ugly)
+
+####creds
+powered by the [sunvox library](https://warmplace.ru/soft/sunvox/sunvox_lib.php) if u didnt catch on
+special thanks to sk0 in the discord for being patient lmao

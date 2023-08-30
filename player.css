@@ -1,0 +1,65 @@
+/*some colors for you
+to define for your player
+to look cute n shit*/
+:root {
+    --backgroundColor: #75002f;
+    --buttonInactive: #180010;
+    --buttonActive: #451054;
+    --detailColor: #dd44f8;
+}
+
+/*the rest of the owl
+it came to me fully formed
+i drew it like this*/
+.boxen {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+    background: var(--backgroundColor);
+}
+.playBox {
+    grid-column: 1;
+    grid-row: 2;
+}
+.sliderBox {
+    grid-column: 2 3;
+    grid-row: 2;
+    padding: auto auto;
+}
+
+button {
+    border: none;
+    color: var(--detailColor);
+    padding: 10px 10px;
+}
+.playButton {
+    background-color: var(--buttonInactive);
+}
+.stopButton {
+    background-color: var(--buttonActive);
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1em;
+    background: var(--detailColor);
+    outline: none;
+    padding: 5px 5px;
+}
+.slider::-slider-webkit-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--backgroundColor);
+}
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--backgroundColor);
+}
