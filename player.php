@@ -2,8 +2,8 @@
 <html>
     <?php //sunvox file picker
         $svDir = glob('projects/*.sunvox');
-        //including e as a flag in the url hides (or, doesnt build) the file picker
-        if (is_null($_GET['e'])) {
+        //including f as a flag builds a file chooser
+        if (isset($_GET['f'])) {
             // build file chooser to be blitted out later
             $chooser = "<table class='chooser'>";
             $rowNum = 0;
