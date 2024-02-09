@@ -22,6 +22,7 @@ oops broken
   + `?d` hides download links in the file picker
 
 ### todo
+* make it handle there being an empty project directory instead of jsut not drawing writing anything (some example projects have been added so u can quickly make sure shit works)
 * make it stop LFO-driven projects
 * make it more pretty
 

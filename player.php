@@ -31,9 +31,9 @@
         }
     ?>
     <head>
-        <link href="../css/player.css" rel="stylesheet"/>
-        <script src="../js/sunvox/sunvox.js"></script>
-        <script src="../js/sunvox/sunvox_lib_loader.js"></script>
+        <link href="player.css" rel="stylesheet"/>
+        <script src="js/sunvox.js"></script>
+        <script src="js/sunvox_lib_loader.js"></script>
     </head>
     <body>
         <form action="">
@@ -47,8 +47,8 @@
         <?php echo $chooser; ?>
 
         <!-- this, taken apart
-        and reassembled, hollow
-          with no more vision
+        and reassembled, but now
+          without a display
 
         https://warmplace.ru/soft/sunvox/jsplay/
 
