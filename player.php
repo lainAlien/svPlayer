@@ -58,6 +58,8 @@
             var numLines = 1;
             var playStatus = 0;
             var fname = "<?php echo $svFile; ?>"
+            var svSlider = document.getElementById("svVolSlider");
+            var svVolDefault = 80;
             function status( s ) { document.getElementById( "status" ).innerHTML = s; console.log( s ); }
             function info() { //Show song information:
                 // bodged to only show verbose info with the ?v tag (song name and filename only otherwise)
@@ -67,6 +69,7 @@
                 s += "filename: " + fname.substr(9) + ";<br>";
                 <?php if (isset($_GET['v'])) {echo 's += "BPM (Beats Per Minute): " + sv_get_song_bpm( 0 ) + ";<br>";';} ?>
                 <?php if (isset($_GET['v'])) {echo 's += "TPL (Ticks Per Line or Tempo): " + sv_get_song_tpl( 0 ) + ";<br>";';} ?>
+                <?php if (isset($_GET['v'])) {echo 's += "Real BMP (BPM/(TPL/6)): " + (sv_get_song_bpm( 0 ) / (sv_get_song_tpl( 0 ) / 6)) + ";<br>";';} ?>
                 <?php if (isset($_GET['v'])) {echo 's += "number of frames: " + sv_get_song_length_frames( 0 ) + ";<br>";';} ?>
                 <?php if (isset($_GET['v'])) {echo 'numLines = sv_get_song_length_lines( 0 );';} ?>
                 <?php if (isset($_GET['v'])) {echo 's += "number of lines: " + numLines + ";<br>";';} ?>
@@ -83,6 +86,7 @@
                     if( sv_load_from_memory( 0, byteArray ) == 0 ) {
                         centerReq = 1;
                         fileSize = byteArray.byteLength;
+                        svVolDefault = sv_volume(0); svSlider.value = svVolDefault; sv_volume(0, svVolDefault);
                         status( "song loaded" );
                         info();
                         if( playStatus ) {
