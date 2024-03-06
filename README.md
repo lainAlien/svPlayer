@@ -3,7 +3,7 @@ a sunvox player for ur website
 
 a small and basic sunvox player to embed in your website. it plays back a random or selected sunvox project, with the intent of being used for generative and noisy patches.
 
-A demo of this repo can be found at [this link](https://lainalien.space/sunvox/svPlayer/player.php). if it's not working there im working on it/depressed/please submit a pr lol
+A demo of this repo can be found at [this link](https://lainalien.space/sunvox/svPlayer/). if it's not working there im working on it/depressed/please submit a pr lol
 
 ### features
 - NEW!! *two* buttons
