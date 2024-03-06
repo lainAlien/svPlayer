@@ -15,7 +15,7 @@ A demo of this repo can be found at [this link](https://lainalien.space/sunvox/s
 + place the svPlayer folder wherever in your website's directory structure you want
 + put your .sunvox projects in the `svPlayer/projects` folder
 + edit player.css if you want
-+ load svPlayer/player.php as the contents of a div on whatever page you want it on
++ load `svPlayer/player.php` into an `<embed>` tag wherever u want
   + you can use `?p=<project.sunvox>` to load the file `projects/<project.sunvox>`
   + `?v` gives more verbose song info output
   + `?f` displays a song picker, which lists songs in the `projects/` directory. it assumes ur replacing-spaces-with-hypheens in filenames and removes them; check out the `str_replace` command on line 14 to change this
