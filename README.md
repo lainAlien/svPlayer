@@ -1,3 +1,8 @@
+# this has been moved
+[>>>git gay](https://git.gay/lainalien/svPlayer)
+
+this repo will no loinger receive updates
+
 # svPlayer
 a sunvox player for ur website
 
